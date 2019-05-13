@@ -1,0 +1,2186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XPlm>
+  <Transaction>
+    <Aliasname>SearchInCAD</Aliasname>
+    <Import>
+      <Parameter>
+        <FieldCollection>
+          <Field>
+            <Name>ITEM_TYPE</Name>
+            <Type>XPlmDispatch</Type>
+          </Field>
+          <Field>
+            <Name>CAPTION</Name>
+            <Type>XPlmMessage</Type>
+            <Attribut>R0145</Attribut>
+          </Field>
+          <Field>
+            <Name>MAXRECORDS</Name>
+            <Value>500</Value>
+          </Field>
+        </FieldCollection>
+        <StructureCollection>
+          <Structure>
+            <Name>XPlmHeader</Name>
+            <FieldCollection>
+              <Field>
+                <Name>functionmodule</Name>
+                <Value>searchDialog</Value>
+              </Field>
+            </FieldCollection>
+          </Structure>
+          <Structure>
+            <Name>Options</Name>
+            <FieldCollection>
+              <Field>
+                <Name>ShowLastSearchValues</Name>
+                <Value>1</Value>
+              </Field>
+              <Field>
+                <Name>ThumbnailPreview</Name>
+                <Value>1</Value>
+              </Field>
+            </FieldCollection>
+          </Structure>
+        </StructureCollection>
+        <TableCollection>
+          <Table>
+            <Name>CheckButtons</Name>
+            <FieldCollectionTable>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>description</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>R0041</Attribut>
+                </Field>
+                <Field>
+                  <Name>value</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>enable</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>visible</Name>
+                  <Value>1</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>2</Value>
+                </Field>
+                <Field>
+                  <Name>description</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>R0120</Attribut>
+                </Field>
+                <Field>
+                  <Name>value</Name>
+                  <Value>0</Value>
+                </Field>
+                <Field>
+                  <Name>enable</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>visible</Name>
+                  <Value>1</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>3</Value>
+                </Field>
+                <Field>
+                  <Name>description</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>R0100</Attribut>
+                </Field>
+                <Field>
+                  <Name>value</Name>
+                  <Value>0</Value>
+                </Field>
+                <Field>
+                  <Name>enable</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>visible</Name>
+                  <Value>1</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>4</Value>
+                </Field>
+                <Field>
+                  <Name>description</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>R0165</Attribut>
+                </Field>
+                <Field>
+                  <Name>value</Name>
+                  <Value>0</Value>
+                </Field>
+                <Field>
+                  <Name>enable</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>visible</Name>
+                  <Value>1</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>5</Value>
+                </Field>
+                <Field>
+                  <Name>description</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>R0043</Attribut>
+                </Field>
+                <Field>
+                  <Name>value</Name>
+                  <Value>0</Value>
+                </Field>
+                <Field>
+                  <Name>enable</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>visible</Name>
+                  <Value>1</Value>
+                </Field>
+              </FieldCollection>
+            </FieldCollectionTable>
+          </Table>
+          <Table>
+            <Name>SearchProperties</Name>
+            <FieldCollectionTable>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>created_by_id</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>2</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>_assignment_number</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>3</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>_student_number</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>4</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>major_rev</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>5</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>classification</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>6</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>name</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>7</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>description</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>8</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>state</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>9</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>locked_by_id</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>id</Name>
+                  <Value>10</Value>
+                </Field>
+                <Field>
+                  <Name>property</Name>
+                  <Value>authoring_tool</Value>
+                </Field>
+              </FieldCollection>
+            </FieldCollectionTable>
+          </Table>
+          <Table>
+            <Name>Columns</Name>
+            <FieldCollectionTable>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>created_by_id@keyed_name</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>110</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_assignment_number</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_student_number</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>75</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>major_rev</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>200</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>name</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>description</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>state</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>classification</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>authoring_tool</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>50</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_grade</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_possible_points</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>210</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_feedback</Value>
+                </Field>
+              </FieldCollection>
+            </FieldCollectionTable>
+          </Table>
+        </TableCollection>
+      </Parameter>
+    </Import>
+  </Transaction>
+  
+  <Transaction>
+    <!-- works with XPlmDotNetDialog AssemblyVersion("1.2.1.1") and above -->
+    <Aliasname>SavePreviewDialog</Aliasname>
+    <Import>
+      <Parameter>
+        <FieldCollection>
+          <Field>
+            <Name>Root</Name>
+            <Type>XPlmDispatch</Type>
+          </Field>
+          <Field>
+            <Name>LocalWorkDir</Name>
+            <Type>XPlmProperty</Type>
+            <Attribut>LocalWorkDir</Attribut>
+          </Field>
+          <Field>
+            <!-- Dialogs ribbon description. XAML-Code generated with XPlmGUIEditor -->
+            <Name>GUI</Name>
+            <Value>
+              <![CDATA[<XPlmRibbonDialog>
+						
+						<RIBBON_SAVEPREVIEW>
+						<RadRibbonView RightTemplate="{x:Null}" Align="Center" AllowDragOverTab="False" AllowDragReorder="False" AllTabsEqualHeight="True" DropDownButtonStyle="{x:Null}" DropDownDisplayMemberPath="{x:Null}" DropDownDisplayMode="Collapsed" DropDownStyle="{x:Null}" IsDropDownOpen="False" ItemDropDownContentTemplate="{x:Null}" ItemDropDownContentTemplateSelector="{x:Null}" LeftTemplate="{x:Null}" OverflowMode="Scroll" ScrollMode="Pixel" SupressSelectedContentTemplateReapplying="False" TabOrientation="Horizontal" TabStripPlacement="Top" TopTemplate="{x:Null}" BottomTemplate="{x:Null}" ApplicationName="XPLM SavePreview" ContentHeight="70" IsDefaultItemSelected="True" Background="#FFFFFFFF" Name="XPlmRibbonView_SP" av:Grid.Row="0" av:Grid.ColumnSpan="3" xmlns="http://schemas.telerik.com/2008/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:xpguie="clr-namespace:XPlmGUIEditor;assembly=XPlmGUIEditor">
+						
+						<RadRibbonTab IsSelected="True" Header="{av:DynamicResource NDL0006}" StyleManager.Theme="{x:Null}">
+												
+						<RadRibbonGroup Header="{av:DynamicResource NDL0026}" StyleManager.Theme="{x:Null}"><av:Button Background="{av:DynamicResource Save_transparent_32x32.png}" VerticalContentAlignment="Bottom" Style="{av:DynamicResource XPlmButton_WHITE}" Name="_d3775948_80bc_4925_8732_18331bcee603" Tag="Click|1&gt;DCORE&gt;mTreePresenter:SaveButton_Click_SAVEPREVIEW&gt;WPFCTRL" Width="40" Margin="5,0,5,0" AllowDrop="True" /></RadRibbonGroup>
+												
+						<RadRibbonGroup Header="{av:DynamicResource NDL0011}" StyleManager.Theme="{x:Null}"><av:ComboBox Text="Modified" Style="{av:DynamicResource XPLMComboBox}" Name="_a99c1afc_a3f8_4731_b0d4_791d9ca3e94e" Width="94" Margin="5,0,5,0" VerticalAlignment="Top" AllowDrop="True">
+						
+						<av:ComboBoxItem Content="{av:DynamicResource NDL0036}" Name="_508e6d6f_234a_42a7_ac1d_57658c3abc86" Tag="Selected|1&gt;DCORE&gt;mTreePresenter:NoneRadioButton_Click_SAVEPREVIEW&gt;NONE" />
+						
+						<av:ComboBoxItem Content="{av:DynamicResource NDL0073}" Name="_ead0cf43_20f2_4412_ba5b_7c2483c13b51" Tag="Selected|1&gt;DCORE&gt;mTreePresenter:LockedRadioButton_Click_SAVEPREVIEW&gt;NONE" />
+						
+						<av:ComboBoxItem Content="{av:DynamicResource NDL0038}" Name="_9da8d46d_da03_4267_b50a_ea1121ad835d" Tag="Selected|1&gt;DCORE&gt;mTreePresenter:AllRadioButton_Click_SAVEPREVIEW&gt;NONE" />
+						
+						<av:ComboBoxItem IsSelected="True" Content="{av:DynamicResource NDL0037}" Name="_37813e3b_306d_4654_b5ef_53cd775e7a7b" Tag="Selected|1&gt;DCORE&gt;mTreePresenter:ModifiedRadioButton_Click_SAVEPREVIEW&gt;NONE" />
+						
+						</av:ComboBox></RadRibbonGroup>
+						
+						<RadRibbonGroup Header="{av:DynamicResource NDL0061}" StyleManager.Theme="{x:Null}"><av:Button Background="{av:DynamicResource Refresh_transparent_32x32.png}" VerticalContentAlignment="Bottom" Style="{av:DynamicResource XPlmButton_WHITE}" Name="_d3885948_80bc_4925_8832_18331bcee603" Tag="Click|1&gt;DCORE&gt;mTreePresenter:RefreshButton_Click_SAVEPREVIEW&gt;WPFCTRL" Width="40" Margin="5,0,5,0" AllowDrop="True" /></RadRibbonGroup>
+						
+						<RadRibbonGroup Header="{av:DynamicResource NDL0000}" StyleManager.Theme="{x:Null}"><av:Button Background="{av:DynamicResource Cancel_transparent_32x32.png}" VerticalContentAlignment="Bottom" Style="{av:DynamicResource XPlmButton_WHITE}" Name="_734e31bc_20fb_413d_998e_465eb4ef4b3b" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:BTN_WND_CLOSE_Click&gt;NONE" Width="40" Margin="5,0,5,0" AllowDrop="True" /></RadRibbonGroup>
+						
+						</RadRibbonTab></RadRibbonView>
+						</RIBBON_SAVEPREVIEW>
+											
+						
+						<RIBBON_WORKSPACEMANAGER>
+						<RadRibbonView RightTemplate="{x:Null}" Align="Center" AllowDragOverTab="False" AllowDragReorder="False" AllTabsEqualHeight="True" DropDownButtonStyle="{x:Null}" DropDownDisplayMemberPath="{x:Null}" DropDownDisplayMode="Collapsed" DropDownStyle="{x:Null}" IsDropDownOpen="False" ItemDropDownContentTemplate="{x:Null}" ItemDropDownContentTemplateSelector="{x:Null}" LeftTemplate="{x:Null}" OverflowMode="Scroll" ScrollMode="Pixel" SupressSelectedContentTemplateReapplying="False" TabOrientation="Horizontal" TabStripPlacement="Top" TopTemplate="{x:Null}" BottomTemplate="{x:Null}" ApplicationName="XPLM WorkSpaceManager" ContentHeight="70" IsDefaultItemSelected="True" Background="#FFFFFFFF" Name="XPlmRibbonView_WS" av:Grid.Row="1" av:Grid.ColumnSpan="3" xmlns="http://schemas.telerik.com/2008/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:xpguie="clr-namespace:XPlmGUIEditor;assembly=XPlmGUIEditor">
+						
+						<RadRibbonTab IsSelected="True" Header="{av:DynamicResource NDL0005}" StyleManager.Theme="{x:Null}">
+						<RadRibbonGroup Header="{av:DynamicResource NDL0061}" StyleManager.Theme="{x:Null}"><av:Button Background="{av:DynamicResource Refresh_transparent_32x32.png}" VerticalContentAlignment="Bottom" Style="{av:DynamicResource XPlmButton_WHITE}" Name="_c3682fd8_da51_4f5a_99c8_37b1a09b439d" Tag="Click|1&gt;DCORE&gt;Workspace:RefreshFileStructure&gt;NONE" Width="40" Margin="5,0,5,0" AllowDrop="True" /></RadRibbonGroup>
+						
+						<RadRibbonGroup Header="{av:DynamicResource NDL0041}" StyleManager.Theme="{x:Null}"><av:ToggleButton Content="{av:DynamicResource NDL0042}" Style="{av:DynamicResource XPlmToggleButton}" Name="_b6e965a7_2084_48a6_804a_eb32c06fb60f" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:TriggerPLMConnection&gt;WPFCTRL" Margin="5,0,5,0" VerticalAlignment="Top" AllowDrop="True" /></RadRibbonGroup>
+						
+						<RadRibbonGroup Header="{av:DynamicResource NDL0000}" StyleManager.Theme="{x:Null}"><av:Button Background="{av:DynamicResource Cancel_transparent_32x32.png}" VerticalContentAlignment="Bottom" Style="{av:DynamicResource XPlmButton_WHITE}" Name="_e808e2ef_07e0_43f4_baad_735f909d7dd1" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:BTN_WND_CLOSE_Click&gt;NONE" Width="40" Margin="5,0,5,0" AllowDrop="True" /></RadRibbonGroup>
+						</RadRibbonTab></RadRibbonView>
+						</RIBBON_WORKSPACEMANAGER>
+						
+						<BACKSTAGE><telerik:RadRibbonBackstage Name="BackStage" Style="{DynamicResource XPlmRadRibbonBackstageStyle}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+						
+						<!--Das NameProperty "BSI_APP" ist bindend, es dient der Auswertung ob BackStage Application zur Anzeige gebracht werden muss-->
+						<!--Dieses BackstageItem wird nur zur Anzeige gebracht, wenn SavePreview und WorspaceManger zusammen in einer Applikation laufen-->
+						
+						<telerikRibbonView:RadRibbonBackstageItem Name="BSI_APP" HeaderForeground="Black" Header="{DynamicResource NDL0001}" IsSelectable="True" xmlns:telerikRibbonView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.RibbonView"><Grid>
+						
+						<StackPanel Margin="15 15 0 0"><StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+						<Button ToolTip="{DynamicResource NDL0006}" Width="35" Height="35" Name="BTN_BACKSTAGE_SP" Style="{DynamicResource XPlmButton_WHITE}" Background="{DynamicResource SavePreview_transparent_32x32.png}" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:ActivateSavePreviewTab&gt;NONE" />
+						<Label Name="LBL_BACKSTAGE_SP" Margin="10 0 0 0" FontSize="16" VerticalContentAlignment="Center" Content="{DynamicResource NDL0006}" />
+						</StackPanel>
+						
+						<StackPanel Orientation="Horizontal" Margin="0 10 0 0"><Button ToolTip="{DynamicResource NDL0005}" Width="35" Height="35" Name="BTN_BACKSTAGE_WS" Style="{DynamicResource XPlmButton_WHITE}" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:ActivateWorkSpaceManagerTab&gt;NONE" Background="{DynamicResource WorkspaceManager_transparent_32x32.png}" /><Label Name="LBL_BACKSTAGE_WS" Margin="10 0 0 0" FontSize="16" VerticalContentAlignment="Center" Content="{DynamicResource NDL0005}" /></StackPanel>
+						</StackPanel></Grid></telerikRibbonView:RadRibbonBackstageItem>
+						
+						<telerikRibbonView:RadRibbonBackstageItem Name="BSI_INFO" HeaderForeground="Black" Header="{DynamicResource NDL0039}" IsSelectable="True" xmlns:telerikRibbonView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.RibbonView"><Grid><DockPanel Margin="20" LastChildFill="False" Name="INFODOCK">
+						
+						<Label HorizontalAlignment="Right" Name="LBL_VERSION" Content="Version: TEMPLATEBINDING!" DockPanel.Dock="Top" Margin="0 0 0 10" />
+						
+						<ToggleButton Height="20" HorizontalAlignment="Right" Name="TBTN_LOGGING" Style="{DynamicResource XPlmToggleButton}" DockPanel.Dock="Top" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:TriggerLogging&gt;WPFCTRL" Content="{DynamicResource NDL0008}" Margin="0 0 0 10" />
+						
+						<ToggleButton Height="20" HorizontalAlignment="Right" Name="TBTN_XPLMMESSAGE" Style="{DynamicResource XPlmToggleButton}" DockPanel.Dock="Top" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:TriggerXPlmMessages&gt;WPFCTRL" Content="{DynamicResource NDL0009}" Margin="0 0 0 5" /><StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Right" Margin="0 0 0 0">
+						
+						<Label Name="LBL_INFO_SERIALIZE_DATAMODEL" Content="{DynamicResource NDL0010}" /><Button Name="BTN_INFO_SERIALIZE_DATAMODEL" DockPanel.Dock="Top" Style="{DynamicResource XPlmButton_WHITE}" Background="{DynamicResource Export_transparent_20x20.png}" Width="32" Height="32" HorizontalAlignment="Right" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:SerializeDataModel&gt;WPFCTRL" /></StackPanel><StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Right" Margin="0 0 0 5">
+						
+						<Label Name="LBL_INFO_SHOW_DATAMODEL" Content="{DynamicResource NDL0069}" /><Button Name="BTN_INFO_SHOW_DATAMODEL" DockPanel.Dock="Top" Style="{DynamicResource XPlmButton_WHITE}" Background="{DynamicResource DisplayDocument_transparent_20x20.png}" Width="32" Height="32" HorizontalAlignment="Right" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:ShowSelectedDataModel&gt;WPFCTRL" /></StackPanel></DockPanel></Grid></telerikRibbonView:RadRibbonBackstageItem>
+						
+						<telerikRibbonView:RadRibbonBackstageItem Name="BSI_CLOSE" HeaderForeground="Black" Header="{DynamicResource NDL0000}" IsSelectable="False" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:BTN_WND_CLOSE_Click&gt;NONE" xmlns:telerikRibbonView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.RibbonView" /></telerik:RadRibbonBackstage></BACKSTAGE><TOOLBAR><QuickAccessToolBar IsOverflowOpen="False" Name="QuickAccessToolBar" xmlns="http://schemas.telerik.com/2008/xaml/presentation" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"><av:Button Background="#FFFFFFFF" FontSize="8" FontWeight="Bold" Style="{av:DynamicResource XPlmButton_WHITE}" Name="BTN_QUICK_SP" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:ActivateSavePreviewTab&gt;NONE" Width="20" ToolTip="{av:DynamicResource NDL0006}" StyleManager.Theme="{x:Null}">SP</av:Button><av:Button Background="#FFFFFFFF" FontSize="8" FontWeight="Bold" Style="{av:DynamicResource XPlmButton_WHITE}" Name="BTN_QUICK_WS" Tag="Click|1&gt;DCORE&gt;WorkspaceDialog:ActivateWorkSpaceManagerTab&gt;NONE" Width="20" Margin="3,0,0,0" ToolTip="{av:DynamicResource NDL0005}" StyleManager.Theme="{x:Null}">WS</av:Button></QuickAccessToolBar></TOOLBAR></XPlmRibbonDialog>]]>
+            </Value>
+          </Field>
+        </FieldCollection>
+
+        <StructureCollection>
+          <Structure>
+            <Name>XPlmHeader</Name>
+            <FieldCollection>
+              <Field>
+                <Name>functionmodule</Name>
+                <Value>showWorkspaceBrowserDialog</Value>
+              </Field>
+            </FieldCollection>
+          </Structure>
+          <Structure>
+            <Name>Options</Name>
+            <FieldCollection>
+              <Field>
+                <!-- True: requires PLM-Connection on startup, otherwise the Diaolog will not appear -->
+                <!-- Note: GenericPLMConnector must implement method "isConnected() on true" -->
+                <Name>CheckInitialPLMConnection</Name>
+                <Value>True</Value>
+              </Field>
+              <Field>
+                <!-- True: the rows are filled with values ​​during initialization (increases the performance when scrolling) -->
+                <!-- False: the rows are filled with values ​​during scrolling (for faster dialog loading in case of giant assemblies) -->
+                <Name>CacheRows</Name>
+                <Value>False</Value>
+              </Field>
+
+              <!-- LOGGING -->
+
+              <Field>
+                <!-- Number of max rows in SystemMessages -->
+                <Name>MessageBuffer</Name>
+                <Value>50</Value>
+              </Field>
+              <Field>
+                <!-- Path to desired basic log file -->
+                <Name>LogFile</Name>
+                <Value>
+                </Value>
+              </Field>
+              <Field>
+                <!-- Path to desired time log file -->
+                <Name>TimeLogFile</Name>
+                <Value></Value>
+              </Field>
+              <Field>
+                <!-- Path to desired serialization file -->
+                <Name>SerializeDataModelFile</Name>
+                <Value>
+                </Value>
+              </Field>
+
+              <!-- VISUAL -->
+              <Field>
+                <!-- True: Set the calling WND as Parent of the Dialog and bring the Dialog on Top -->
+                <Name>WindowBinding</Name>
+                <Value>True</Value>
+              </Field>
+              <Field>
+                <!-- Initial dialog width, when no user profile is available -->
+                <Name>Width</Name>
+                <Value>1700</Value>
+              </Field>
+              <Field>
+                <!-- Initial dialog height, when no user profile is available -->
+                <Name>Height</Name>
+                <Value>750</Value>
+              </Field>
+              <Field>
+                <!-- count of alternate visual row style -->
+                <Name>AlternationCount</Name>
+                <Value>2</Value>
+              </Field>
+              <Field>
+                <!-- alternate row color -->
+                <Name>AlternateRowBackground</Name>
+                <Value>#FFF5F5F5</Value>
+              </Field>
+              <Field>
+                <!-- True: each column has a separate summary field -->
+                <!-- Note: at the moment there is no summary content -->
+                <Name>ShowColumnFooters</Name>
+                <Value>False</Value>
+              </Field>
+              <Field>
+                <!-- RealTime: 	all rows are visable during scolling (poor performance) -->
+                <!-- Mixed: 	only freezed columns are visible during scrolling (balanced performance) -->
+                <!-- Deferred: 	all rows are disabled during scolling (best performance) -->
+                <Name>ScrollMode</Name>
+                <Value>Mixed</Value>
+              </Field>
+              <Field>
+                <!-- percentage progress bar refresh interval -->
+                <!-- Note: in case of giant assemblies small values cause performance looses -->
+                <Name>UpdateProgressBarIntervall</Name>
+                <Value>10</Value>
+              </Field>
+              <Field>
+                <!-- height of rows -->
+                <!-- Note: values above 25 improve the scrolling performance -->
+                <Name>RowHeight</Name>
+                <Value>25</Value>
+              </Field>
+              <Field>
+                <!-- Toggles the control panel on the left side of the dialog on/off  -->
+                <Name>SideBar</Name>
+                <Value>True</Value>
+              </Field>
+
+              <!-- WORKSPACE -->
+
+              <Field>
+                <!-- If set to true, before deleting a file the access will be checked  -->
+                <Name>WorkSpaceDeleteFileAccessCheck</Name>
+                <Value>False</Value>
+              </Field>
+
+              <!-- COLUMNS -->
+
+              <Field>
+                <!-- Number of columns on the left side, which are excepted from horizontal scrolling -->
+                <Name>FrozenColumnCount</Name>
+                <Value>2</Value>
+              </Field>
+              <Field>
+                <!-- The user can change the number of frozen columns -->
+                <Name>CanUserFreezeColumns</Name>
+                <Value>True</Value>
+              </Field>
+              <Field>
+                <!-- The visibility of the seperator between frozen and unfrozen columns -->
+                <Name>FrozenColumnsSplitterVisibility</Name>
+                <Value>Visible</Value>
+              </Field>
+              <Field>
+                <!-- Toggles filtering fields in the column headers on/off -->
+                <Name>FilteringMode</Name>
+                <Value>True</Value>
+              </Field>
+              <Field>
+                <!-- Toggles user profiles on/off, controling column visibility, column width and dialog position -->
+                <Name>UserProfileMode</Name>
+                <Value>True</Value>
+              </Field>
+
+              <!-- LOGIC -->
+
+              <Field>
+                <!-- 0: the dialog starts as a window -->
+                <!-- 1: the dialog starts hidden and closes automatically -->
+                <Name>AutoOk</Name>
+                <Value>0</Value>
+              </Field>
+              <Field>
+                <!-- Save options -->
+                <!-- 0: nothing will be saved -->
+                <!-- 1: only documents marked as modified will be saved -->
+                <!-- 2: all documents will be saved -->
+                <!-- 3: only locked documents will be saved -->
+                <Name>SaveMode</Name>
+                <Value>1</Value>
+              </Field>
+              <Field>
+                <!-- True: all documents marked as modified will be locked in PLM automatically on dialog startup  -->
+                <Name>AutoLock</Name>
+                <Value>False</Value>
+              </Field>
+              <Field>
+                <!-- Metadata update options on dialog startup -->
+                <!-- Modified: only documents marked as modified are updated -->
+                <!-- All: all documents are updated -->
+                <Name>GetMetadata</Name>
+                <Value>Modified</Value>
+              </Field>
+              <Field>
+                <!-- User Exit called before GetMetaData on dialog startup -->
+                <!-- Syntax: ScriptEngine.CScriptEngine@CallbackMethod -->
+                <Name>GetMetadataPreActionUserExit</Name>
+                <Value>
+                </Value>
+              </Field>
+              <Field>
+                <!-- User Exit called after GetMetaData on dialog startup -->
+                <!-- Syntax: ScriptEngine.CScriptEngine@CallbackMethod -->
+                <Name>GetMetadataPostActionUserExit</Name>
+                <Value>
+                </Value>
+              </Field>
+              <Field>
+                <!-- HandleEvent() User Exit compilation -->
+                <!-- In Use: PreActionAddLineNotify, PreActionOnOKNotify -->
+                <Name>EventTransactionFile</Name>
+                <Value>XPlmArasNXTransaction.xml</Value>
+              </Field>
+              <Field>
+                <!-- Toggles the PreActionAddLine user exit on/off -->
+                <!-- Note: in case of giant assemblies PreActionAddLineNotify will result in a descend performance -->
+                <Name>PreActionAddLineNotify</Name>
+                <Value>False</Value>
+              </Field>
+              <Field>
+                <!-- Number of superordinate assembly documents that are marked for saving in the PLM -->
+                <!-- CAUTION: Can be overwriten by the ModifyFather Property of the PLM-Connectors's  -->
+                <Name>ModificationLevelParent</Name>
+                <Value>1</Value>
+              </Field>
+              <Field>
+                <!-- Number of superordinate assembly documents after which ModificationParent should be aborted. -->
+                <!-- CAUTION: Can be overwriten by the ModifyFather Property of the PLM-Connectors's  -->
+                <Name>ModificationLevelParentDisabled</Name>
+                <Value>1</Value>
+              </Field>
+              <Field>
+                <!-- The user can only save documents, which locked by himself. -->
+                <Name>AllowSaveForLockedDocumentsOnly</Name>
+                <Value>False</Value>
+              </Field>
+            </FieldCollection>
+          </Structure>
+
+          <Structure>
+            <Name>CheckInstructions</Name>
+            <FieldCollection>
+              <Field RowHighlightStyle="#FFCB84" Resource="NDL0134">
+                <!-- If check is negative, row background appears in defined color. -->
+                <Name>WorkspaceModifiedUserLockCheck</Name>
+                <Value>True</Value>
+              </Field>
+            </FieldCollection>
+          </Structure>
+
+          <Structure>
+
+            <!-- DON'T CHANGE FIELD-NAMES! -->
+            <!-- This structure maps external defined names to dialog names -->
+            <!-- Syntax: Name = DialogName ||| Value = ExternalName -->
+            <!-- Further configurable DataTypeNames are described in the in the documentation! -->
+
+            <Name>DataTypeNames</Name>
+            <FieldCollection>
+              <Field>
+                <Name>StructureName_MetaData</Name>
+                <Value>MetaData</Value>
+              </Field>
+              <Field>
+                <Name>FieldName_CLB_ModelStamp</Name>
+                <Value>ModelStamp</Value>
+              </Field>
+              <Field>
+                <Name>FieldName_CLB_TimeStamp</Name>
+                <Value>cax_timestamp</Value>
+              </Field>
+              <Field>
+                <Name>FieldName_PLM_TimeStamp</Name>
+                <Value>TimeStamp</Value>
+              </Field>
+              <Field>
+                <Name>FieldName_FILE_ModelStamp</Name>
+                <Value>ModelStamp</Value>
+              </Field>
+
+            </FieldCollection>
+          </Structure>
+
+        </StructureCollection>
+
+        <TableCollection>
+
+          <Table>
+            <!-- Additional SAVEPREVIEW ToggleButtons that are not described in the dialogs ribbon description -->
+            <!-- Note: the described mapping refers to the dialogs output document -->
+            <Name>OptionsDialogRibbonToggleButtons</Name>
+            <FieldCollectionTable>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0070</Attribut>
+                  <!-- Stückliste aktualisieren -->
+                </Field>
+                <Field>
+                  <Name>Visible</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>Enabled</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>Value</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>CheckButton1</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0071</Attribut>
+                  <!-- Neue Generation -->
+                </Field>
+                <Field>
+                  <Name>Visible</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>Enabled</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>Value</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>CheckCreateGeneration</Value>
+                </Field>
+              </FieldCollection>
+            </FieldCollectionTable>
+          </Table>
+
+          <Table>
+            <Name>OptionsWorkspaceRibbonToggleButtons</Name>
+            <FieldCollectionTable></FieldCollectionTable>
+          </Table>
+
+          <!-- TABLE SETTINGS SAVEPREVIEW -->
+          <!-- NOTES 
+					
+					# Each row requires a unique numerical "RowID". The order does not matter.
+					# Keep in mind there are COLUMN-DEPENDENCIES to Table Contextmenuitems, RowID's may not be changed! 
+					
+					# Sample Row Fields
+					|
+					'->	Name: RowID				 <-> Value: unique numerical value as identifier
+					'->	Name: Caption 			 <-> Value: string/ressource as column header 
+					'->	Name: Attribut	 		 <-> Value: classical XPlmMapping with Sybtype/Name
+					'->	Name: Edit	 			 <-> Value: boolean true/false - user can edit column entries
+					'->	Name: Width	 			 <-> Value: numerical value as column width
+					'->	Name: ToolTip			 <-> Value: string/ressource as column tooltip
+					'->	Name: CellToolTip		 <-> Value: Property from Object 'RowData'
+					'->	Name: IsInstanceProperty <-> Value: boolean true/false - when false equal column values are managed as one
+					'->	Name: ColumnType		 <-> Value: "CheckText" column for text with an additional checkbox
+															"Image" column for images
+															"Text" column for strings
+															"FilterImages" column for imgage based values (see notes below)
+															"Checkbox" column for boolean values 
+															"Combobox" column for static multiple choices per row
+															"DynamicCombobox" column for alternating multiple choices per row
+															"HyperLink" column for hyperlinks 															
+					
+					# Syntax ColumnType:FilterImages 
+					|
+					'-> Mapped attribute value is compared to given value/image pairs 
+					'-> value/image pair Sample (you can define as much as you want)
+					| 	| 						
+					| 	'-> <Field ImageFileName="Ok_transparent_16x16.png" AttributeValue="06" ImageToolTip="NDL0019">
+					|		  <Name>FilterImage</Name>		
+					|		  <Value>access_write</Value> : set as unique identifier		
+					|		</Field> 
+					|
+					'-> If attribute value can't be compared directly, define the "Interpreter" Field.
+					  |
+					  '-> Known Interpreters are: "TimestampComparison"
+						<Field>
+							<Name>Interpreter</Name>
+							<Value>NameOfInterpreter</Value>
+						</Field>
+										
+					END NOTES -->
+
+          <Table>
+            <Name>Columns</Name>
+            <FieldCollectionTable>
+
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>1</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0075</Attribut>
+                  <!-- Value>Modellname</Value -->
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>450</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>ModelName</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>CheckText</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0076</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value>ModelFullName</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>2</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0077</Attribut>
+                  <!-- Value>Vorschaubild</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>viewable_file</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Image</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>30</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0078</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>3</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0093</Attribut>
+                  <!-- Value>Path</Value -->
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>ModelPath</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0094</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>4</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0091</Attribut>
+                  <!-- <Value>FileAccess</Value>-->
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>FilterImages</Value>
+                </Field>
+                <Field>
+                  <Name>Interpreter</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>ModelAccess</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>FieldCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value></Value>
+                </Field>
+                <Field ImageFileName="Ok_transparent_16x16.png" AttributeValue="06" ImageToolTip="NDL0019">
+                  <Name>FilterImage</Name>
+                  <Value>access_write</Value>
+                </Field>
+                <Field ImageFileName="Error_transparent_16x16.png" AttributeValue="04" ImageToolTip="NDL0017">
+                  <Name>FilterImage</Name>
+                  <Value>access_read</Value>
+                </Field>
+                <Field ImageFileName="Warning_transparent_16x16.png" AttributeValue="02" ImageToolTip="NDL0018">
+                  <Name>FilterImage</Name>
+                  <Value>access_warning</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0092</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>5</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0116</Attribut>
+                  <!-- Value>Generation</Value -->
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>32</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>generation</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0117</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>6</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0083</Attribut>
+                  <!-- Value>Status</Value -->
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>FilterImages</Value>
+                </Field>
+                <Field>
+                  <Name>Interpreter</Name>
+                  <Value>TimestampComparison</Value>
+                </Field>
+                <Field ImageFileName="Ident_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0020">
+                  <Name>FilterImage</Name>
+                  <Value>ident</Value>
+                </Field>
+                <Field ImageFileName="Upload_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0022">
+                  <Name>FilterImage</Name>
+                  <Value>upload</Value>
+                </Field>
+                <Field ImageFileName="Older_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0021">
+                  <Name>FilterImage</Name>
+                  <Value>older</Value>
+                </Field>
+                <Field ImageFileName="Conflict_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0023">
+                  <Name>FilterImage</Name>
+                  <Value>conflict</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0084</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>7</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0085</Attribut>
+                  <!-- Value>Lock</Value -->
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>FilterImages</Value>
+                </Field>
+                <Field>
+                  <Name>Interpreter</Name>
+                  <Value>LockedByComparison</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>locked_by_id</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field ImageFileName="Unlock_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0130">
+                  <Name>FilterImage</Name>
+                  <Value>unlock</Value>
+                  <!-- DO NOT MODIFY VALUE -->
+                </Field>
+                <Field ImageFileName="Lock_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0131">
+                  <Name>FilterImage</Name>
+                  <Value>lock</Value>
+                  <!-- DO NOT MODIFY VALUE -->
+                </Field>
+                <Field ImageFileName="CheckOutUser_transparent_16x16.png" AttributeValue="XPLM::NotSet" ImageToolTip="NDL0132">
+                  <Name>FilterImage</Name>
+                  <Value>lockother</Value>
+                  <!-- DO NOT MODIFY VALUE -->
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0086</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>8</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0108</Attribut>
+                  <!-- Value>LockedBy</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>locked_by_id@keyed_name</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0109</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>9</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0079</Attribut>
+                  <!-- Value>ID</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>XPlmCollaboration</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>keyed_name</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>100</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0080</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>10</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0081</Attribut>
+                  <!-- Value>Item Rev</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>major_rev</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>32</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0082</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>11</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0114</Attribut>
+                  <!-- Value>PLM Status</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>current_state@name</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>78</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0115</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>12</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0099</Attribut>
+                  <!-- Value>PLM Name</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>name</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0100</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>13</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0118</Attribut>
+                  <!-- Value>Description</Value -->
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>description</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0119</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>14</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0110</Attribut>
+                  <!-- Value>Modifiziert am</Value -->
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>123</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>modified_on</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0111</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>15</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0112</Attribut>
+                  <!-- Value>Modifiziert durch</Value -->
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>130</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>modified_by_id@keyed_name</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>false</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0113</Attribut>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>16</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <!--Attribut>NDL0118</Attribut-->
+                  <Value>Assignment Number</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_assignment_number</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <!--Attribut>NDL0118</Attribut-->
+                  <Value>Assignment Number</Value>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>RowID</Name>
+                  <Value>17</Value>
+                </Field>
+                <Field>
+                  <Name>Caption</Name>
+                  <Type>XPlmMessage</Type>
+                  <!--Attribut>NDL0118</Attribut-->
+                  <Value>Feedback</Value>
+                </Field>
+                <Field>
+                  <Name>Subtype</Name>
+                  <Value>StructureCollection</Value>
+                </Field>
+                <Field>
+                  <Name>Structurename</Name>
+                  <Value>MetaData</Value>
+                </Field>
+                <Field>
+                  <Name>Attribut</Name>
+                  <Value>_feedback</Value>
+                </Field>
+                <Field>
+                  <Name>Width</Name>
+                  <Value>150</Value>
+                </Field>
+                <Field>
+                  <Name>Edit</Name>
+                  <Value>true</Value>
+                </Field>
+                <Field>
+                  <Name>ColumnType</Name>
+                  <Value>Text</Value>
+                </Field>
+                <Field>
+                  <Name>ToolTip</Name>
+                  <Type>XPlmMessage</Type>
+                  <!--Attribut>NDL0118</Attribut-->
+                  <Value>Feedback</Value>
+                </Field>
+                <Field>
+                  <Name>CellToolTip</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+            </FieldCollectionTable>
+          </Table>
+
+          <Table>
+            <Name>ContextMenuItems</Name>
+            <FieldCollectionTable>
+
+              <!-- #### CHECK SAVE #### -->
+              <!-- #################### -->
+
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0128</Attribut>
+                  <!-- Set Save -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>CheckSelected_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Submenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0050</Attribut>
+                  <!-- Auswahl -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>CheckSelected_transparent_16x16.png</Value>
+                </Field>
+                <Field Destination="SAVEPREVIEW">
+                  <Name>Callback</Name>
+                  <Value>ActivateWorkspaceModified</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field ModifierKey1="Control">
+                  <Name>Hotkey</Name>
+                  <Value>Space</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0051</Attribut>
+                  <!-- Rekursiv -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>CheckStructure_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>CallbackType</Name>
+                  <Value>Branch</Value>
+                </Field>
+                <Field Destination="SAVEPREVIEW">
+                  <Name>Callback</Name>
+                  <Value>ActivateWorkspaceModified</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>EndSubmenu</Value>
+                </Field>
+              </FieldCollection>
+
+              <!-- #### UNCHECK SAVE #### -->
+              <!-- ###################### -->
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0129</Attribut>
+                  <!-- UnSet Save -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UncheckSelected_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Submenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0050</Attribut>
+                  <!-- Auswahl -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UncheckSelected_transparent_16x16.png</Value>
+                </Field>
+                <Field Destination="SAVEPREVIEW">
+                  <Name>Callback</Name>
+                  <Value>DeactivateWorkspaceModified</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field ModifierKey1="Control" ModifierKey2="Shift">
+                  <Name>Hotkey</Name>
+                  <Value>Space</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0051</Attribut>
+                  <!-- Rekursiv -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UncheckStructure_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>CallbackType</Name>
+                  <Value>Branch</Value>
+                </Field>
+                <Field Destination="SAVEPREVIEW">
+                  <Name>Callback</Name>
+                  <Value>DeactivateWorkspaceModified</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value>
+                  </Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>EndSubmenu</Value>
+                </Field>
+              </FieldCollection>
+
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Separator</Value>
+                </Field>
+              </FieldCollection>
+
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0047</Attribut>
+                  <!-- Lock -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>Lock_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Submenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0050</Attribut>
+                  <!-- Auswahl -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>Lock_transparent_16x16.png</Value>
+                </Field>
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="7" ColumnDependency2="8">
+                  <Name>Callback</Name>
+                  <Value>LockObject</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field ModifierKey1="Control">
+                  <Name>Hotkey</Name>
+                  <Value>L</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0051</Attribut>
+                  <!-- Rekursiv -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>LockStructure_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>CallbackType</Name>
+                  <Value>Branch</Value>
+                </Field>
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="7" ColumnDependency2="8">
+                  <Name>Callback</Name>
+                  <Value>LockObject</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>EndSubmenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0048</Attribut>
+                  <!-- EntSperren -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>Unlock_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Submenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0050</Attribut>
+                  <!-- Auswahl -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>Unlock_transparent_16x16.png</Value>
+                </Field>
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="7" ColumnDependency2="8">
+                  <Name>Callback</Name>
+                  <Value>UnlockObject</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field ModifierKey1="Control" ModifierKey2="Shift">
+                  <Name>Hotkey</Name>
+                  <Value>L</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0051</Attribut>
+                  <!-- Rekursiv -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UnlockStructure_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>CallbackType</Name>
+                  <Value>Branch</Value>
+                </Field>
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="7" ColumnDependency2="8">
+                  <Name>Callback</Name>
+                  <Value>UnlockObject</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>EndSubmenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Separator</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0052</Attribut>
+                  <!-- Metadaten aktualisieren -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UpdateProperties_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Submenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0050</Attribut>
+                  <!-- Auswahl -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UpdateProperties_transparent_16x16.png</Value>
+                </Field>
+                <!-- Set ColumnDependency'N' for all Fields referenced to Structure MetaData and  ColumnTypes: Lock -->
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="5" ColumnDependency2="7" ColumnDependency3="8" ColumnDependency4="10" ColumnDependency5="11" ColumnDependency6="12" ColumnDependency7="13" ColumnDependency8="14" ColumnDependency9="15" ColumnDependency10="6">
+                  <Name>Callback</Name>
+                  <Value>GetMetaData</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field ModifierKey1="Control">
+                  <Name>Hotkey</Name>
+                  <Value>M</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0051</Attribut>
+                  <!-- Rekursiv -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>UpdatePropertiesStructure_transparent_16x16.png</Value>
+                </Field>
+                <Field>
+                  <Name>CallbackType</Name>
+                  <Value>Branch</Value>
+                </Field>
+                <!-- Set ColumnDependency'N' for all Fields referenced to Structure MetaData and  ColumnTypes: Lock -->
+                <Field Destination="PLM" Condition1="PLM" ColumnDependency1="5" ColumnDependency2="7" ColumnDependency3="8" ColumnDependency4="10" ColumnDependency5="11" ColumnDependency6="12" ColumnDependency7="13" ColumnDependency8="14" ColumnDependency9="15" ColumnDependency10="6">
+                  <Name>Callback</Name>
+                  <Value>GetMetaData</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field ModifierKey1="Control" ModifierKey2="Alt">
+                  <Name>Hotkey</Name>
+                  <Value>M</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>EndSubmenu</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Type</Name>
+                  <Value>Separator</Value>
+                </Field>
+              </FieldCollection>
+              <FieldCollection>
+                <Field>
+                  <Name>Text</Name>
+                  <Type>XPlmMessage</Type>
+                  <Attribut>NDL0074</Attribut>
+                  <!-- Show in PLM -->
+                </Field>
+                <Field>
+                  <Name>Icon</Name>
+                  <Value>DisplayDocument_transparent_16x16.png</Value>
+                </Field>
+                <Field Condition1="PLM" Condition2="SINGLESELECT" Destination="PLM">
+                  <Name>Callback</Name>
+                  <Value>DisplayObject</Value>
+                </Field>
+                <Field>
+                  <Name>PreActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field>
+                  <Name>PostActionUserExit</Name>
+                  <Value></Value>
+                </Field>
+                <Field ModifierKey1="Control">
+                  <Name>Hotkey</Name>
+                  <Value>O</Value>
+                </Field>
+              </FieldCollection>
+
+            </FieldCollectionTable>
+          </Table>
+
+        </TableCollection>
+      </Parameter>
+    </Import>
+  </Transaction>
+</XPlm>
